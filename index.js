@@ -106,9 +106,11 @@ async function start() {
       useNewUrlParser: true,
     });
 
-    app.listen(3000, () => {
-      console.log(`server is running on port ${PORT}`);
-    })
+    app.listen(PORT, () => {
+      console.log(
+        `server is running on port ${PORT}`
+      );
+    });
   } catch (e) {
     console.log(e)
   }
